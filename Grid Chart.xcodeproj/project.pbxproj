@@ -14,6 +14,7 @@
 		2D98B28B288B1EB200B4E474 /* Grid_Chart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D98B289288B1EB200B4E474 /* Grid_Chart.xcdatamodeld */; };
 		2D98B28D288B1EB300B4E474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D98B28C288B1EB300B4E474 /* Assets.xcassets */; };
 		2D98B290288B1EB300B4E474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D98B28E288B1EB300B4E474 /* LaunchScreen.storyboard */; };
+		2D98B29A288B227F00B4E474 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98B299288B227F00B4E474 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2D98B28C288B1EB300B4E474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D98B28F288B1EB300B4E474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D98B291288B1EB300B4E474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D98B299288B227F00B4E474 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				2D98B28E288B1EB300B4E474 /* LaunchScreen.storyboard */,
 				2D98B291288B1EB300B4E474 /* Info.plist */,
 				2D98B289288B1EB200B4E474 /* Grid_Chart.xcdatamodeld */,
+				2D98B299288B227F00B4E474 /* GridView.swift */,
 			);
 			path = "Grid Chart";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				2D98B285288B1EB200B4E474 /* ViewController.swift in Sources */,
 				2D98B281288B1EB200B4E474 /* AppDelegate.swift in Sources */,
 				2D98B28B288B1EB200B4E474 /* Grid_Chart.xcdatamodeld in Sources */,
+				2D98B29A288B227F00B4E474 /* GridView.swift in Sources */,
 				2D98B283288B1EB200B4E474 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

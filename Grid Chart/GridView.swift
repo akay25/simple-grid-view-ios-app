@@ -19,6 +19,8 @@ class GridView: UIView
     var showGridLines = true
     var localGridSize: CGFloat = 160
     
+    var contentSize: CGSize!
+    
     private var path = UIBezierPath()
     var gridLayer: CAShapeLayer?
     
@@ -42,8 +44,8 @@ class GridView: UIView
     
     fileprivate func calcGrid(){
         localGridSize = GRID_SIZE * zoomFactor
-        hLinesCount = Int(bounds.height / localGridSize)
-        vLinesCount = Int(bounds.width / localGridSize)
+        hLinesCount = Int(contentSize.height / localGridSize)
+        vLinesCount = Int(contentSize.width / localGridSize)
         print("Lines: H:\(hLinesCount), V:\(vLinesCount)")
         print("Gridsize: \(localGridSize)")
     }
@@ -69,7 +71,7 @@ class GridView: UIView
             let xPos = CGFloat(i) * localGridSize
 
             path.move(to: CGPoint(x: xPos, y: 0))
-            path.addLine(to: CGPoint(x: xPos, y: bounds.height))
+            path.addLine(to: CGPoint(x: xPos, y: contentSize.height))
             path.close()
         }
         
@@ -78,7 +80,7 @@ class GridView: UIView
             let yPos = CGFloat(i) * localGridSize
 
             path.move(to: CGPoint(x: 0, y: yPos))
-            path.addLine(to: CGPoint(x: bounds.height, y: yPos))
+            path.addLine(to: CGPoint(x: contentSize.width, y: yPos))
         }
         
         path.close()

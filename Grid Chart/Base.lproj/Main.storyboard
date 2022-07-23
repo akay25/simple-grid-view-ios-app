@@ -44,17 +44,19 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-qE-uxf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="762"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VvA-rm-XPM">
+                                <rect key="frame" x="0.0" y="34" width="414" height="772"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray3Color"/>
-                            </view>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0dp-QC-i5G"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Zoh-tt-kC4"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="gridViewController" destination="T4o-qE-uxf" id="R0E-dw-64v"/>
+                        <outlet property="gridViewController" destination="VvA-rm-XPM" id="eir-Ja-TQt"/>
                         <outlet property="zoomLabel" destination="FdV-Jl-DZj" id="RWw-FX-ER4"/>
                     </connections>
                 </viewController>
@@ -67,8 +69,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -33,18 +33,25 @@ class GridView: UIView
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        localGridSize = GRID_SIZE * zoomFactor
-        hLinesCount = Int(UIScreen.main.bounds.height / localGridSize)
-        vLinesCount = Int(UIScreen.main.bounds.width / localGridSize)
-        print("Lines: H:\(hLinesCount), V:\(vLinesCount)")
-        print("Gridsize: \(localGridSize)")
-        
         if(showGridLines){
             drawGrid()
         }else{
             removeGrid()
         }
+    }
+    
+    fileprivate func calcGrid(){
+        localGridSize = GRID_SIZE * zoomFactor
+        hLinesCount = Int(bounds.height / localGridSize)
+        vLinesCount = Int(bounds.width / localGridSize)
+        print("Lines: H:\(hLinesCount), V:\(vLinesCount)")
+        print("Gridsize: \(localGridSize)")
+    }
+    
+    func setNewZoomValue(newScale: CGFloat) {
+        zoomFactor = newScale
+        removeGrid()
+        drawGrid()
     }
     
     fileprivate var gridCenter: CGPoint {
@@ -53,6 +60,7 @@ class GridView: UIView
 
     fileprivate func drawGrid()
     {
+        calcGrid()
         path = UIBezierPath()
         path.lineWidth = 5.0
         

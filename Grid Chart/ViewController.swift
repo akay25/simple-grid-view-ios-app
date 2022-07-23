@@ -10,29 +10,26 @@ import UIKit
 class ViewController: UIViewController {
     
     // Custom view variables
-    @IBOutlet weak var viewport: UIViewController!
-    
+    @IBOutlet weak var gridViewController: UIView!
+        @IBOutlet weak var zoomLabel: UILabel!
+
     // Custom private variables
     var gridView: GridView!
-    var zoomFactor: CGFloat = 0.5
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set grid
         gridView = GridView()
-        gridView.zoomFactor = zoomFactor
-        gridView.frame = self.view.frame
+        gridView.frame = self.gridViewController.frame
         self.view.addSubview(gridView)
-        
-        // Set gesture handler
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
-        self.view.addGestureRecognizer(gesture)
     }
     
-    @objc func handleTap(sender: UITapGestureRecognizer){
-        let touchPoint = sender.location(in: self.view)
-        print("Clicked at: \(touchPoint.x), \(touchPoint.y)")
+    @IBAction func zoomSlide(_ sender: UISlider, forEvent event: UIEvent) {
+        let zoomValueStr = String(format: "%.2f", sender.value)
+        print("Zoom factor: ", zoomValueStr)
+        zoomLabel.text = "\(zoomValueStr)"
+        gridView.setNewZoomValue(newScale: CGFloat(sender.value))
     }
 }
 

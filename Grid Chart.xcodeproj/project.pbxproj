@@ -10,7 +10,7 @@
 		2D98B281288B1EB200B4E474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98B280288B1EB200B4E474 /* AppDelegate.swift */; };
 		2D98B283288B1EB200B4E474 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98B282288B1EB200B4E474 /* SceneDelegate.swift */; };
 		2D98B285288B1EB200B4E474 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98B284288B1EB200B4E474 /* ViewController.swift */; };
-		2D98B288288B1EB200B4E474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D98B286288B1EB200B4E474 /* Main.storyboard */; };
+		2D98B288288B1EB200B4E474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D98B286288B1EB200B4E474 /* Main.storyboard */; settings = {ASSET_TAGS = (scroll, ); }; };
 		2D98B28B288B1EB200B4E474 /* Grid_Chart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D98B289288B1EB200B4E474 /* Grid_Chart.xcdatamodeld */; };
 		2D98B28D288B1EB300B4E474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D98B28C288B1EB300B4E474 /* Assets.xcassets */; };
 		2D98B290288B1EB300B4E474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D98B28E288B1EB300B4E474 /* LaunchScreen.storyboard */; };
@@ -99,6 +99,9 @@
 		2D98B275288B1EB200B4E474 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					scroll,
+				);
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
